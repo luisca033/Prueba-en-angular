@@ -1,0 +1,19 @@
+.morado {
+    color: #4a4aba;
+    font-size: 11px;
+}
+
+.gris {
+    background: #b3b3b3;
+    font-size: 12px;
+}
+
+.azul {
+    width: 120px;
+    background-color: #3d8bcd;
+}
+
+.blanco {
+    width: 100px;
+    background: white;
+}

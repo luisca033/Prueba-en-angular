@@ -1,0 +1,30 @@
+<div class="mt-4">
+    <h2>Analitics</h2>
+
+    <div>
+        <p>ANALITYCS</p>
+        <table class="table tabla">
+            <thead>
+                <tr>
+                    <th class="gris" scope="col">#</th>
+                    <th class="gris" scope="col">Title</th>
+                    <th class="gris" scope="col">Word #1</th>
+                    <th class="gris" scope="col">Word #2</th>
+                    <th class="gris" scope="col">Word #3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let word of palabrasMas; let i=index">
+                    <th scope="row">{{i}}</th>
+                    <td>{{datos[i].titulo}}</td>
+
+                    <td>{{word[0]}}</td>
+                    <td>{{word[1]}}</td>
+                    <td>{{word[2]}}</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

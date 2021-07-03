@@ -1,0 +1,43 @@
+<div class=" row mt-2">
+    <div class="col-6">
+        <h2>Search</h2>
+        <span>Word</span>
+        <div class="input-group input-group-sm mb-3">
+            <input type="text" class="gris form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Titulo" #criterio (keyup.enter)="buscarPalabra(criterio.value)">
+        </div>
+        <div class="mt-3">
+            <button (click)="buscarPalabra(criterio.value)" class="btn btn-primary mx-2 azul">Search</button>
+            <button class="btn btn-light blanco">Cancel</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <p>RESULTS</p>
+        <table class="table tabla">
+            <thead>
+                <tr>
+                    <th class="gris" scope="col">#</th>
+                    <th class="gris" scope="col">Title</th>
+                    <th class="gris" scope="col">Count</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of datos ;let i=index">
+                    <th scope="row">{{i}}</th>
+                    <td>{{data.titulo}}</td>
+                    <td>{{data.cuenta}}</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="mt-3" *ngIf="estado">
+        <h2>Resultados de las palabras</h2>
+        <div *ngFor="let ocu of ocurrencias">
+            <span>dato: {{ocu.string}}</span>
+            <br>
+            <p *ngIf="estado2">La palabra aparece en el texto</p>
+        </div>
+    </div>
+</div>

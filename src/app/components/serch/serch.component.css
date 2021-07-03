@@ -1,0 +1,31 @@
+.morado {
+    color: #4a4aba;
+    font-size: 11px;
+}
+
+.gris {
+    background: #b3b3b3;
+    font-size: 12px;
+    color: black;
+}
+
+.azul {
+    width: 120px;
+    background-color: #3d8bcd;
+}
+
+.blanco {
+    width: 100px;
+    background: white;
+}
+
+p {
+    width: 100%;
+    background-color: #6666ff;
+    text-align: center;
+}
+
+.tabla {
+    margin: 0px;
+    border: #333381
+}

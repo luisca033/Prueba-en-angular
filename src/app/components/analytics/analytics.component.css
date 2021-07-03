@@ -1,0 +1,15 @@
+p {
+    width: 100%;
+    background-color: #6666ff;
+    text-align: center;
+}
+
+.gris {
+    background-color: #b3b3b3;
+    color: black;
+}
+
+.tabla {
+    margin: 0px;
+    border: #333381
+}
